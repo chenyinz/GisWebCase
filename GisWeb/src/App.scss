@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.3s ease-in-out;
+  font-size: 18px;
+  font-weight: 500;
+}
+:root {
+  --primaryColor: hsl(221, 66%, 48%);
+  --gisInfor: hsl(173, 30%, 85%);
+  --siderBar: hsl(169, 20%, 57%);
+  --siderBtn: hsl(0, 0, 85%);
+  --gisBtn: hsl(0, 100, 99);
+  --fontColor: hsl(0, 0, 0);
+  --fontHovercolor: hsl(191, 74, 60);
+}
+body {
+  background: var(--primaryColor);
+  overflow-x: hidden;
+}
+.btn {
+  border-radius: 15px;
+  &:hover {
+    color: var(--siderBar);
+  }
+}

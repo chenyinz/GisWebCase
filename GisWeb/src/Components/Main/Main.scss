@@ -1,0 +1,76 @@
+:root {
+  --primaryColor: hsl(191, 50%, 56%);
+  --gisInfor: hsl(173, 30%, 85%);
+  --siderBar: hsl(169, 20%, 57%);
+  --siderBtn: hsl(0, 0, 85%);
+  --gisBtn: hsl(0, 100, 99);
+  --fontColor: hsl(0, 0, 0);
+  --fontHovercolor: hsl(191, 74, 60);
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  .leftsider {
+    background: var(--siderBar);
+    border-radius: 15px;
+    width: 20%;
+    height: 90%;
+    border: solid 1px red;
+    margin: 25px 20px;
+    padding: 20px;
+    .loge {
+      text-align: center;
+    }
+    .buttonitems {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      .span {
+        font-size: 45px;
+      }
+    }
+    .notifications {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+  }
+  .rightsider {
+    width: 75%;
+    height: 90%;
+    outline: none;
+    margin: 25px 20px;
+    .topcontent {
+      width: 100%;
+      height: 75%;
+      border: solid 2px gray;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+    .bottomcontent {
+      padding: 10px;
+      width: 100%;
+      height: 20%;
+      border-radius: 15px;
+      border: solid 2px gray;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 15px;
+      justify-content: center;
+      align-items: center;
+      .item {
+        padding: 10px;
+        border-radius: 15px;
+        .inputType {
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+}
