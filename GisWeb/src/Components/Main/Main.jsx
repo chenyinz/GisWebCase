@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unknown-property */
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
+import MapContainer from '../MapContainer/MapContainer'
 import "./main.css"
 const Main = () => {
   return (
@@ -77,7 +78,7 @@ const Main = () => {
             </div>
             <div className="rightsider">
                 <div className="topcontent">
-                webgis
+                <MapContainer/>
                 </div>
                 <div className="bottomcontent">
                     <div className="item">
